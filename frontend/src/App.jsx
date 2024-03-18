@@ -1,17 +1,19 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import About from "./components/About";
+import HomePage from "./components/Home";
 
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <div className="container" style={{ height: "70vh" }}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur
-        sed reiciendis ad. Incidunt atque mollitia minus est deleniti, minima,
-        voluptates optio, culpa nisi sit eius fugit nobis nihil hic!
-      </div>
-      <Footer />
+      {/* <Navbar />
+      <Footer /> */}
+
+
+      {/* <About /> */}
+
+      <HomePage />
     </div>
   );
 };
