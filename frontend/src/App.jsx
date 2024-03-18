@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import HomePage from "./components/Home";
+import Career from "./components/Career";
 
 const App = () => {
   return (
@@ -13,7 +14,10 @@ const App = () => {
 
       {/* <About /> */}
 
-      <HomePage />
+      {/* <HomePage /> */}
+
+
+      <Career />
     </div>
   );
 };
