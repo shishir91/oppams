@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
 
 const Career = () => {
-    // Dummy job listings data
     const jobListings = [
         {
             title: 'Frontend Developer',
@@ -28,11 +27,10 @@ const Career = () => {
             location: 'San Francisco, CA',
             description: 'Seeking an experienced AI Developer to work on cutting-edge artificial intelligence projects. Strong background in machine learning and deep learning is required.',
         },
-        // Add more job listings as needed
     ];
 
     return (
-        <div className="bg-white py-12">
+        <div className="bg-gray-100 py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
 
@@ -168,8 +166,6 @@ const Career = () => {
                                 </p>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
 
@@ -204,4 +200,4 @@ const Career = () => {
     )
 }
 
-export default Career
+export default Career;
