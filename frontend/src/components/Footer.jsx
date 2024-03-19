@@ -1,5 +1,5 @@
 import React from "react";
-import vlogo from "../vlogo.png";
+import logo from "../logo.png";
 
 const Footer = () => {
   return (
@@ -8,32 +8,44 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com/" className="flex items-center">
-              <img src={vlogo} className="h-40" alt="FlowBite Logo" />
+              <img src={logo} className="h-40" alt="FlowBite Logo" />
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                Resources
+              <h2 className="mb-6 text-xl font-bold text-gray-900 uppercase dark:text-white">
+                We specialize In
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">
-                    Flowbite
+                  <a href="" className="hover:underline">
+                    Software Development
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline"
-                  >
-                    Tailwind CSS
+                <li className="mb-4">
+                  <a href="" className="hover:underline">
+                    Web Development
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a href="" className="hover:underline">
+                    Mobile App Development
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a href="" className="hover:underline">
+                    Digital Marketing
+                  </a>
+                </li>
+                <li >
+                  <a href="" className="hover:underline">
+                    IT Consulting
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-xl font-bold font-semibold text-gray-900 uppercase dark:text-white">
                 Follow us
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -56,7 +68,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-xl font-bold font-semibold text-gray-900 uppercase dark:text-white">
                 Legal
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -77,9 +89,9 @@ const Footer = () => {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2023{" "}
+            © 2024{" "}
             <a href="https://flowbite.com/" className="hover:underline">
-              Flowbite™
+              Oppams™
             </a>
             . All Rights Reserved.
           </span>
