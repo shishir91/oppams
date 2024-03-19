@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from "aos"
+import "aos/dist/aos.css"
 import { FaLaptopCode, FaRocket, FaUserFriends } from 'react-icons/fa'
 
 const HomePage = () => {
@@ -26,12 +28,16 @@ const HomePage = () => {
         },
     ]
 
+    useEffect(() => {
+        Aos.init();
+      }, []);
+
     return (
         <div className="bg-gray-100">
             <div className="bg-white">
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
-                        <h2 className="text-base font-semibold text-blue-600 uppercase tracking-wide animate-pulse">
+                        <h2 className="text-3xl font-bold text-blue-600 uppercase tracking-wide animate-pulse">
                             Welcome to OPPAMS Technologies
                         </h2>
                         <p className="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
@@ -57,7 +63,7 @@ const HomePage = () => {
                     <div className="mt-10">
                         <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
                             {features.map((feature) => (
-                                <div key={feature.id} className="relative animate-bounce">
+                                <div key={feature.id} className="relative" data-aos = "fade-up">
                                     <dt>
                                         <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
                                             {feature.icon}

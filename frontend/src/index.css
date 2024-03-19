@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .services {
   background-image: url("./bgimg3.jpeg");
   background-repeat: no-repeat;
