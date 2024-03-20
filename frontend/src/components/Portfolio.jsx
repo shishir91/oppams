@@ -63,16 +63,16 @@ const Portfolio = () => {
         <h1 className="text-4xl font-bold text-center mb-8">Portfolio</h1>
         {/* Filters */}
         <div className="mb-8 flex justify-center">
-          <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg mr-4">
+          <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-lg mr-4">
             All
           </button>
-          <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg mr-4">
+          <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-lg mr-4">
             Web Design
           </button>
-          <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg mr-4">
+          <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-lg mr-4">
             Mobile Apps
           </button>
-          <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg">
+          <button className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded-lg">
             Graphic Design
           </button>
         </div>
