@@ -99,7 +99,7 @@ const Services = () => {
           <h1 className="text-5xl font-bold text-orange-600">Get In Touch</h1>
           <span className="text-2xl font-semibold text-gray-400">
             Ready to take your business to the next level? <a
-                  href="#"
+                  href="/contact"
                   class="text-2xl inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800"
                 >
                   Contact Us
