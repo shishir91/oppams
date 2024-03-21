@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { FaLaptopCode, FaRocket, FaUserFriends } from 'react-icons/fa'
+import ImageSlider from './ImageSlider'
 
 const HomePage = () => {
     const features = [
@@ -34,7 +35,8 @@ const HomePage = () => {
 
     return (
         <div className="bg-gray-100">
-            <div className="bg-white">
+            <ImageSlider/>
+            <div className="bg-white" id='about'>
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
                     <div className="text-center">
                         <h2 className="text-3xl font-bold text-blue-600 uppercase tracking-wide animate-pulse">
@@ -461,3 +463,5 @@ const HomePage = () => {
 }
 
 export default HomePage
+
+

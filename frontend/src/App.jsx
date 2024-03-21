@@ -10,20 +10,21 @@ import OurTeam from "./components/OurTeam";
 import Portfolio from "./components/Portfolio";
 import ContactUs from "./components/ContactUs";
 
-
 const App = () => {
   return (
     <div>
       <Router>
-        <Navbar />
+        <div>
+          <Navbar />
+        </div>
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/career" element={<Career />} />
-          <Route path="/services" element={<Services/>} />
-          <Route path="/ourTeam" element={<OurTeam/>} />
-          <Route path="/portfolio" element={<Portfolio/>} />
-          <Route path="/contact" element={<ContactUs/>} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/ourTeam" element={<OurTeam />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
         <Footer />
       </Router>
