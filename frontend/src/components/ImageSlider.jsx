@@ -3,7 +3,7 @@ import Slide1 from "../images/building1.jpg";
 import Slide2 from "../images/building2.jpg";
 import Slide3 from "../images/building3.jpg";
 
-const ImageSlider = () => {
+const ImageSlider = (props) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const scrollToAbout = () => {
     const aboutSection = document.getElementById("about");
@@ -11,26 +11,8 @@ const ImageSlider = () => {
       aboutSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-  const slides = [
-    {
-      image: Slide1,
-      text: "Oppams Technology",
-      title: "",
-      description: "Empowering businesses with innovative solutions",
-    },
-    {
-      image: Slide2,
-      text: "Oppams Technology",
-      title: "",
-      description: "Empowering businesses with innovative solutions",
-    },
-    {
-      image: Slide3,
-      text: "Oppams Technology",
-      title: "",
-      description: "Empowering businesses with innovative solutions",
-    },
-  ];
+  const slides = props.props;
+  console.log(slides);
 
   useEffect(() => {
     const interval = setInterval(() => {
