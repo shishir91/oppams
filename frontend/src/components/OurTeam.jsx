@@ -1,8 +1,16 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import photo from "../images/team.jpg";
+import Image from "./Image";
 
 const OurTeam = () => {
+  const image = {
+    photo,
+    text: "Our Team",
+    title: "",
+    description: "",
+  };
   const team = [
     {
       name: "John Doe",
@@ -44,6 +52,8 @@ const OurTeam = () => {
 
   return (
     <div className="bg-gray-100">
+      <Image props={image} />
+
       <div className="container mx-auto py-10">
         <center className="font-bold text-5xl mb-8">Meet Our Team</center>
         <p className="text-xl text-center text-gray-600 mb-12">

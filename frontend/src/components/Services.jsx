@@ -4,8 +4,16 @@ import mobile from "../images/mobile.jpeg";
 import software from "../images/software.jpeg";
 import digital from "../images/digital.jpeg";
 import consulting from "../images/consulting.jpeg";
+import photo from "../images/services.jpg";
+import Image from "./Image";
 
 const Services = () => {
+  const image = {
+    photo,
+    text: "Our Services",
+    title: "",
+    description: "",
+  };
   const services = [
     {
       title: "Software Development",
@@ -39,8 +47,10 @@ const Services = () => {
     },
   ];
   return (
-    <div className="services">
-      <div className="topdiv">
+    <div>
+      <Image props={image} />
+
+      <div className="">
         <div className="text-7xl font-mono	text font-black">Our Services</div>
         {/* <span>hime</span> */}
       </div>
@@ -49,7 +59,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              class="max-w-sm bg-white rounded-lg shadow dark:bg-gray-800"
+              class="max-w-sm bg-white rounded-lg shadow"
             >
               <a href="#">
                 <img
@@ -61,16 +71,16 @@ const Services = () => {
               </a>
               <div class="p-5">
                 <a href="#">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                     {service.title}
                   </h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                <p class="mb-3 font-normal text-gray-700">
                   {service.description}
                 </p>
                 <a
                   href="#"
-                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800"
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300"
                 >
                   Read more
                   <svg
@@ -94,14 +104,14 @@ const Services = () => {
           ))}
         </div>
       </div>
-      <div className="bg-gray-800 mb-10 p-10">
+      <div className="bg-white rounded-lg p-8 b-10 shadow-lg mb-10 p-10">
         <div className="ser_start_text">
-          <h1 className="text-5xl font-bold text-orange-600">Get In Touch</h1>
-          <span className="text-2xl font-semibold text-gray-400">
+          <h1 className="text-4xl font-bold text-orange-600">Get In Touch</h1>
+          <span className="text-2xl font-semibold text-gray-700">
             Ready to take your business to the next level?{" "}
             <a
               href="/contact"
-              class="text-2xl inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800"
+              class="mr-2 text-2xl inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300"
             >
               Contact Us
             </a>

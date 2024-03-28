@@ -81,7 +81,7 @@ const Navbar = () => {
                   className={`px-2 py-1 ${
                     isScrolled
                       ? "text-gray-100 hover:text-blue-900"
-                      : "text-black hover:text-gray-100"
+                      : "text-black hover:text-blue-900"
                   } ${
                     page.address == "/contact"
                       ? "inline-block bg-orange-500 text-white rounded-lg shadow-lg hover:bg-orange-600 flex items-center justify-center"
